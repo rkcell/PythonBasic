@@ -39,4 +39,9 @@ while True:
 
 
 update_student(students, std_id, new_info)
-print(students)
+
+#Pretty print the students dictionary:
+for x, obj in students.items():
+    print(x)
+    for y in obj:
+        print("    "+ y + ':', obj[y])
