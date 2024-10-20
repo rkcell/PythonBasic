@@ -40,7 +40,7 @@ while True:
 
 update_student(students, std_id, new_info)
 
-#Pretty print the students dictionary:
+#Pretty print the 'students' dictionary:
 for x, obj in students.items():
     print(x)
     for y in obj:
