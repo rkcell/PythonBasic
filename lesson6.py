@@ -1,7 +1,7 @@
 import random
 
 words = ["pizza",'apple',"plane","teeth","shirt"]
-lives = 9
+lives = 4
 secret_word=random.choice(words)
 
 clue = list("?????")
@@ -12,4 +12,5 @@ heart_symbol = u'\u2764'
 while lives >0:
     print("Lives left:" + heart_symbol*lives)
     guess = input("Guess letter or word: ")
-    lives +=1
+    lives -=1
+print(secret_word)
