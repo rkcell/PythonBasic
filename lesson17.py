@@ -42,3 +42,5 @@ print(len(lines))
 #     os.remove("test.txt")
 # else:
 #     print("File does not exist", os.name)
+
+#file.seek(0)
