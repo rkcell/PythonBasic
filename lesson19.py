@@ -1,12 +1,12 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-x = [1,2,3,4,5]
-y = [4,5,6,7,8]
-
-plt.scatter(x,y)
-plt.title("Scatter Plot")
-plt.show()
+# x = [1,2,3,4,5]
+# y = [4,5,6,7,8]
+#
+# plt.scatter(x,y)
+# plt.title("Scatter Plot")
+# plt.show()
 
 
 # dist = np.array([20,40,25,15])
@@ -68,15 +68,15 @@ plt.show()
 
 
 
-# import pandas as pd
-# try:
-#     data = pd.read_csv("foods.csv")
-#     data_spend=data["Spend"]
-#
-#     print(data_spend)
-#     data_spend_filter=data["Spend"] > 30
-#     print(data[data_spend_filter])
-#     print(len(data.loc[data_spend_filter, "First Name"].tolist()))
-#     print(len(data.loc[data_spend_filter, "First Name"].unique()))
-# except FileNotFoundError:
-#     print("File doesn't exist")
+import pandas as pd
+try:
+    data = pd.read_csv("foods.csv")
+    data_spend=data["Spend"]
+
+    print(data_spend)
+    data_spend_filter=data["Spend"] > 30
+    # print(data[data_spend_filter])
+    # print(len(data.loc[data_spend_filter, "First Name"].tolist()))
+    # print(len(data.loc[data_spend_filter, "First Name"].unique()))
+except FileNotFoundError:
+    print("File doesn't exist")
